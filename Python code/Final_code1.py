@@ -11,7 +11,7 @@ CHUNK = 1024 * 4  # how much audio is processed at one time
 FORMAT = pyaudio.paInt16  # Bytes per sample
 CHANNELS = 1  # monoaural i.e. just the one microphone
 RATE = 44100  # samples per second. 44100 is just most common
-output = open("/media/grace/Grace/Portfolio/Music Patterns/data.txt", "a")  # saves data to be accessed by java file.
+output = open("E:/MusicPatterns Git/MusicPatterns/data.csv"", "a")  # saves data to be accessed by processing file.
 stream = pyaudio.PyAudio().open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, output=True, frames_per_buffer=CHUNK)  # Setting up the stream
 
 # The program
